@@ -1,0 +1,20 @@
+{
+  "schema_version": 2,
+  "method": "hybrid_global_floor_plus_recording_quantile",
+  "selection_policy": "maximize event sensitivity, then event F1, event precision, minimize false alarms/hour, then latency",
+  "global_threshold_source": "/home/advik-n/minor-proj/artifacts/dl/attention/threshold_calibration.json",
+  "global_threshold": 0.03,
+  "selected": {
+    "method": "hybrid_global_recording_quantile",
+    "global_threshold": 0.03,
+    "quantile": 0.985,
+    "floor": 0.03,
+    "adaptive_blend": 1.0,
+    "quantile_method": "higher",
+    "min_consecutive_windows": 1,
+    "max_gap_windows": 2,
+    "window_seconds": 20
+  },
+  "warning": "Development OOF calibration only. No independent test data was used. The final checkpoint must be evaluated once with this frozen policy. Offline full-recording quantiles use the complete recording and are not causal real-time thresholds.",
+  "privacy_note": "Per-patient and per-recording out-of-fold evaluation records are omitted; inference calibration settings are unchanged."
+}
