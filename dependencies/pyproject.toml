@@ -1,0 +1,37 @@
+[project]
+name = "minor-proj"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.141.1",
+    "imbalanced-learn>=0.14.0",
+    "matplotlib>=3.11.1",
+    "mne>=1.12.1",
+    "numpy>=2.5.2",
+    "pandas>=3.0.5",
+    "pyedflib>=0.1.42",
+    "pymupdf>=2.1",
+    "python-multipart>=0.0.32",
+    "scikit-learn>=1.9.0",
+    "scipy>=1.18.0",
+    "uvicorn[standard]>=0.52.4",
+    "xgboost>=3.4.1",
+]
+
+[project.optional-dependencies]
+dl = [
+    "torch>=2.12.0",
+]
+
+
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
