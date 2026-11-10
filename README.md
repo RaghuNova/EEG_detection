@@ -24,6 +24,8 @@ dependencies/hybrid_attention_threshold_calibration.json
 
 The backend defaults to these paths. The two PyTorch archives are loaded by the existing CNN and Attention adapters; do not rename or replace them. `dependencies/threshold_calibration.json` is also present as a calibration reference.
 
+The publishable hybrid calibration file retains the selected inference parameters unchanged and omits per-patient and per-recording out-of-fold evaluation records. The original calibration file remains in ignored local storage and is not included in Git history.
+
 ## Install
 
 Run commands from the project root (`minor_project`). Create a virtual environment and install backend packages:

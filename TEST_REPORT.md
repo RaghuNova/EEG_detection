@@ -7,6 +7,7 @@
 - Focused storage-history test passed.
 - Real EDF workflow smoke checks completed at single-recording and small-batch scale. ML, CNN-BiLSTM, and Attention inference returned successful statuses, and the compact result format omitted raw signal arrays. Patient identifiers, filenames, and case-level outputs are intentionally excluded from this report.
 - API health and compact-result endpoints returned successfully. Legacy large-result requests are guarded with HTTP 409.
+- The publishable hybrid calibration retains its exact inference settings; per-patient and per-recording evaluation rows were removed, with a local ignored backup retained.
 
 ## Existing full-batch status
 
