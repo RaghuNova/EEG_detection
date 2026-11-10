@@ -1,0 +1,113 @@
+# Environment variables and credentials
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+config/secrets*
+
+# EEG recordings, annotations, datasets, and patient data
+*.edf
+*.edf.seizures
+*.bdf
+*.fif
+*.set
+*.fdt
+*.vhdr
+*.vmrk
+*.eeg
+*.dat
+patient_data/
+patients/
+patient_records/
+patient_details/
+test_patient/
+test_patients/
+uploads/
+user_uploads/
+recordings/
+datasets/
+dataset/
+chb*/
+CHB-MIT/
+private_data/
+/storage/
+test_patient.zip
+
+# Generated patient reports and local exports
+patient_reports/
+generated_reports/
+reports/generated/
+*.patient.pdf
+*.patient.csv
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node and generated frontend bundles
+node_modules/
+dist/
+build/
+.vite/
+.next/
+out/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+temp/
+tmp/
+cache/
+*.cache
+
+# macOS and editor files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Experiment tracking
+wandb/
+runs/
+mlruns/
+tensorboard/
+lightning_logs/
+
+# Databases and local application state
+*.sqlite
+*.sqlite3
+*.db
+local_storage/
+instance/
+
+# Backups and generated checkpoint unpacking
+*.bak
+*.old
+*.orig
+models/extracted/
+
+# Local report template may contain identifying metadata; share source/docs only.
+/MINOR PROJECT REPORT FORMAT.docx
